@@ -8,13 +8,13 @@
 </head>
 <body>
     <input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia();" /><br />
-    <iframe height="120px" autoplay="autoplay"></iframe><hr />
+    <video height="120px" autoplay="autoplay"></video><hr />
     <input type="button" title="拍照" value="拍照" onclick="getPhoto();" /><br />
     <canvas id="canvas1" height="120px" ></canvas><hr />
     <input type="button" title="视频" value="视频" onclick="getVedio();" /><br />
     <canvas id="canvas2" height="120px"></canvas>
     <script type="text/javascript">
-        var video = document.querySelector('iframe');
+        var video = document.querySelector('video');
         var audio, audioType;
         var canvas1 = document.getElementById('canvas1');
         var context1 = canvas1.getContext('2d');
