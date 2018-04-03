@@ -18,7 +18,8 @@
     function getUserMedia(constraints, success, error) {
     //   if (navigator.mediaDevices.getUserMedia) {
         //最新的标准API
-        navigator.mediaDevices.getUserMedia(constraints).then(success).catch(error);
+        navigator.getUserMedia(constraints, success, error);
+        //navigator.mediaDevices.getUserMedia(constraints).then(success).catch(error);
     //   } else if (navigator.webkitGetUserMedia) {
     //     //webkit核心浏览器
     //     navigator.webkitGetUserMedia(constraints,success, error)
