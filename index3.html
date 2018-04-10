@@ -16,20 +16,17 @@
       $("button").click(function(){
         // $("div").html($("#imageU").files[0]);
         var file_video = $("#videoU").prop("files")[0];
-        $("#vedioView").attr("src",file_video.webkitRelativePath);
-        // console.log(file_video);
-        // // var file = $("#imageU").find("input")[0].files[0];
-        // var reader_video = new FileReader();
-        // reader_video.readAsDataURL(file_video);
-        // var imgFile2;
-        // reader_video.onload=function(e) {  
-        //   imgFile2 = e.target.result;
-        //   // $("iframe").attr("src",imgFile2);
-        //   $("#vedioView").attr("src",imgFile2);
-        // };
+        console.log(file_video);
+        // var file = $("#imageU").find("input")[0].files[0];
+        var reader_video = new FileReader();
+        reader_video.readAsDataURL(file_video);
+        var imgFile2;
+        reader_video.onload=function(e) {  
+          imgFile2 = e.target.result;
+          // $("iframe").attr("src",imgFile2);
+          $("#vedioView").attr("src",);
+        };
       });
-      $("#videoU").click();
-      $("button").click();
   
     //正式读取文件  
     // reader.readAsDataURL(file);  
